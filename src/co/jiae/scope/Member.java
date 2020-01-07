@@ -12,15 +12,15 @@ public class Member {
 	public Member() {
 		
 	}
-
-	public Member(String id, String pw, String name, String addr, String tel, int grade) {
-		this.id = id;
-		this.pw = pw;
-		this.name = name;
-		this.addr = addr;
-		this.tel = tel;
-		this.grade = grade;
-	}
+//
+//	public Member(String id, String pw, String name, String addr, String tel, int grade) {
+//		this.id = id;
+//		this.pw = pw;
+//		this.name = name;
+//		this.addr = addr;
+//		this.tel = tel;
+//		this.grade = grade;
+//	}
 
 	public String getId() {
 		return id;
@@ -67,6 +67,15 @@ public class Member {
 	}
 
 	public void setGrade(int grade) {
+		this.grade = grade;
+	}
+	
+	public void insert(String id, String pw, String name, String addr, String tel, int grade) {
+		this.id = id;
+		this.pw = pw;
+		this.name = name;
+		this.addr = addr;
+		this.tel = tel;
 		this.grade = grade;
 	}
 
